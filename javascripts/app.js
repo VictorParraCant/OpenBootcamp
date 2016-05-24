@@ -3,5 +3,6 @@ $( document ).ready(function() {
     e.preventDefault();
     var direcction = $(this).find('a').attr('href');
     $.scrollTo( direcction, 900, {axis:'y', offset:-91} );
+    $('.navbar-collapse').removeClass('in');
   });
 });
